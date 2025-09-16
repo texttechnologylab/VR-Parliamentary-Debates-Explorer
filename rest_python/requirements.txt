@@ -1,0 +1,21 @@
+pymongo==4.3.3
+flask==2.2.2
+Werkzeug==2.2.2
+ffmpeg-python==0.2.0
+gtts==2.3.1
+numpy==1.24.1
+transformers==4.28.1
+openai==0.27.8
+whisper-openai==1.0.0
+pydub==0.25.1
+sentencepiece==0.1.98
+accelerate==0.18.0
+torch>=2.0.0
+lightning @ git+https://github.com/Lightning-AI/lightning@master
+sentencepiece
+tqdm  # convert_checkpoint.py
+numpy  # train.py dataset memmap
+jsonargparse[signatures]  # generate.py, convert_checkpoint.py CLI
+bitsandbytes  # quantization.py
+datasets  # evaluate.py
+zstandard  # prepare_redpajama.py
