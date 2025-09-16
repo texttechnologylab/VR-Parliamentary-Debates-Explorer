@@ -1,0 +1,46 @@
+"User":{
+    "roomId": "72122a2a-75b0-42b0-a998-99070cef0a47", // Room Id von dem Server gegeben ist unique wird neu erstellt bei einer neuen Raumerstellung
+    "SzenenID": "xxxx", //Statisch für jede Szene
+    "clientId": "d9208aa5-19d5-46ef-bfca-125ff5a5fa92", // Client Id von dem Server
+    "roleId": [""], // Id der Rolle (Statisch)
+    "timestamp": ["xxx", "xxx"], // Timetamp von dem API Server, zur Regulierung der Batches //#NzB
+    "joined_timestamp": "", // Timetamp von dem API Server, nur bei Erstellung //#NzB
+    "audioData": {
+      "base64": ""
+    },
+    "Body": {
+      "position": [[x,y,z],[x,y,z],[x,y,z]],
+      "rotation": [[x,y,z,w],[x,y,z,w],[x,y,z,w]],
+      "cameraRotation": [[x,y,z,w],[x,y,z,w],[x,y,z,w]]
+    },
+    "LeftHand": {
+      "position": [[x,y,z],[x,y,z]],
+      "rotation": [[x,y,z,w],[x,y,z,w]],
+      "Object": [0, 1]
+    },
+    "RightHand": {
+      "position": [[x,y,z],[x,y,z]],
+      "rotation": [[x,y,z,w],[x,y,z,w]],
+      "Object": [0, 2]
+    },
+    "Body_index": ["timestamp1-Bodyindexpos", ".."], // #NzB
+    "RightHand_index": ["timestamp1-RightHandindexpos", ".."], // #NzB
+    "LeftHand_index": ["timestamp1-LeftHandindexpos", ".."] // #NzB
+}
+"ObjectInteraction":
+{
+  "roomId": "72122a2a-75b0-42b0-a998-99070cef0a47", // Room Id von dem Server gegeben ist unique wird neu erstellt bei einer neuen Raumerstellung
+  "SzenenID": "xxxx", //Statisch für jede Szene
+  "clientId": "d9208aa5-19d5-46ef-bfca-125ff5a5fa92", // Client Id von dem Server
+  "objectId": "",
+  "Hand": "Right/Left",
+  "Movement": {
+      "position": [[x,y,z],[x,y,z],[x,y,z]],
+      "rotation": [[x,y,z,w],[x,y,z,w],[x,y,z,w]]
+  }
+  "Interaktion": {
+     "used": [0,0,1,1]
+  }
+  "timestamp": ["", ""] // #NzB
+  "timestamp_index": // #NzB
+}

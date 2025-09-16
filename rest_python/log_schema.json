@@ -1,0 +1,368 @@
+{
+  "Schema": [
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Player Log into a Scene",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB, for a Player unique for every player in a Scene",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "roomId": {
+          "description": "Generated hash of ubiq-Server for a Scene",
+          "type": "String"
+        },
+        "sceneId": {
+          "description": "ID of the Scene",
+          "type": "String"
+        },
+        "clientId": {
+          "description": "ID of the client generated from the ubiq-Server",
+          "type": "String"
+        },
+        "localTime": {
+          "description": "Time in Sec of the device",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "roomId",
+        "sceneId",
+        "clientId",
+        "localTime",
+        "serverTimestamp",
+        "messageId"
+      ]
+    },
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Audio Log",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "audioData": {
+          "description": "base64 byte audio",
+          "type": "String"
+        },
+        "messageId": {
+          "description": "Actual Message of the Player",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "audioData",
+        "localTime",
+        "messageId"
+      ]
+    },
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Body Log",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "messageId": {
+          "description": "Actual Message of the Player",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        },
+        "positions": {
+          "type": "Array",
+          "items": {
+            "x": "number",
+            "y": "number",
+            "z": "number"
+          }
+        },
+        "rotations": {
+          "type": "Array",
+          "items": {
+            "x": "number",
+            "y": "number",
+            "z": "number",
+            "w": "number"
+          }
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "positions",
+        "rotations",
+        "localTime",
+        "serverTimestamp",
+        "messageId"
+      ]
+    },
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Head Log",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "messageId": {
+          "description": "Actual Message of the Player",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        },
+        "positions": {
+          "type": "Array",
+          "items": {
+            "x": "number",
+            "y": "number",
+            "z": "number"
+          }
+        },
+        "rotations": {
+          "type": "Array",
+          "items": {
+            "x": "number",
+            "y": "number",
+            "z": "number",
+            "w": "number"
+          }
+        },
+        "localTime":
+        {
+          "description": "Time in Sec of the device",
+          "type": "number"
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "positions",
+        "rotations",
+        "localTime",
+        "serverTimestamp",
+        "messageId"
+      ]
+    },
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Hand",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "messageId": {
+          "description": "Actual Message of the Player",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        },
+        "positions": {
+          "type": "Array",
+          "items": {
+            "x": "number",
+            "y": "number",
+            "z": "number"
+          }
+        },
+        "rotations": {
+          "type": "Array",
+          "items": {
+            "x": "number",
+            "y": "number",
+            "z": "number",
+            "w": "number"
+          }
+        },
+        "identifier":
+        {
+          "description": "Left or Right for the hand",
+          "type": "String"
+        },
+        "localTime":
+        {
+          "description": "Time in Sec of the device",
+          "type": "number"
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "audioData"
+      ]
+    },
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Object",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "referenceMessage": {
+          "description": "Actual Message of the Player",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        },
+        "objectName": {
+          "type": "String"
+        },
+        "hand": {
+          "type": "String"
+        },
+        "localTime":
+        {
+          "description": "Time in Sec of the device",
+          "type": "number"
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "referenceMessage",
+        "serverTimestamp",
+        "objectName",
+        "hand",
+        "localTime",
+        "interaction"
+      ]
+    },
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Special",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "referenceMessage": {
+          "description": "Actual Message of the Player",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        },
+        "mode": {
+          "type": "String"
+        },
+        "localTime":
+        {
+          "description": "Time in Sec of the device",
+          "type": "number"
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "mode"
+      ]
+    },
+    {
+      "$id": "",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "log",
+      "properties": {
+        "_id": {
+          "description": "Generated hash of MongoDB",
+          "type": "String"
+        },
+        "playerId": {
+          "description": "Generated ID for the player in a scene",
+          "type": "String"
+        },
+        "referenceMessage": {
+          "description": "Actual Message of the Player",
+          "type": "int"
+        },
+        "serverTimestamp": {
+          "description": "TimesTamp of the log-Server",
+          "type": "String"
+        },
+        "logMessage": {
+          "type": "String"
+        },
+        "logType": {
+          "type": "String"
+        },
+        "stacktrace": {
+          "type": "String"
+        },
+        "localTime":
+        {
+          "description": "Time in Sec of the device",
+          "type": "number"
+        }
+      },
+      "required": [
+        "_id",
+        "playerId",
+        "referenceMessage",
+        "logMessage",
+        "logType",
+        "stacktrace",
+        "localTime",
+        "serverTimestamp"
+      ]
+    }
+  ]
+}

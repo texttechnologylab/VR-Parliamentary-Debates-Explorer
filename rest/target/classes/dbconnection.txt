@@ -1,0 +1,6 @@
+remote_host = lehre.texttechnologylab.org
+remote_database = Experiment
+remote_user = vasililab_user
+remote_password = E3z>bmc;!JUX
+remote_port = 27023
+remote_collection = scenarios
