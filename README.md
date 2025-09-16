@@ -19,6 +19,12 @@ VR-ParlExplorer is implemented as a extension for [Va.Si.Li-Lab](https://github.
 5. Adjust urls in the Unity scene under the "Speech selector Panel" and "MataPlayer" -> "VoiceListener"
 6. Click play
 
+# Team
+- [Daniel Bundan](https://github.com/Mocretion)
+- Chrisowaladis Manolis
+- [Giuseppe Abrami](https://github.com/abrami) (Supervision)
+- [Prof. Dr. Alexander Mehler](https://www.texttechnologylab.org/team/alexander-mehler/) (Supervision)
+
 # BibTeX
 ```
 @inproceedings{Abrami:et:al:2025:c,
