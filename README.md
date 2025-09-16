@@ -1,6 +1,4 @@
-[![](https://jitpack.io/v/texttechnologylab/VR-Parliamentary-Debates-Explorer.svg)](https://jitpack.io/#texttechnologylab/VR-Parliamentary-Debates-Explorer)
 ![GitHub License](https://img.shields.io/github/license/Texttechnologylab/VR-Parliamentary-Debates-Explorer)
-
 [![Conference](http://img.shields.io/badge/conference-Hypertext--2025-4b44ce.svg)](https://ht.acm.org/ht2025/)
 [![Paper](http://img.shields.io/badge/paper-Hypertext--2025-4b44ce.svg)](https://doi.org/10.1145/3720553.3746672)
 
