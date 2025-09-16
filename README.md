@@ -8,6 +8,8 @@
 # VR-Parliamentary Debates Explorer
 VR-ParlExplorer: A Hypertext System for the Collaborative Interaction in Parliamentary Debate Spaces
 
+Click for a preview:
+
 [<img src="https://img.youtube.com/vi/XJTRjPCPtuE/hqdefault.jpg" width="500" height="300"
 />](https://www.youtube.com/embed/XJTRjPCPtuE)
 
